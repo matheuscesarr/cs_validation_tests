@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "umd8YWoF9LmB4kLyqEJAT9/6PaCY292Z9wbd3ATuTnkkNEc3yqw8Fv+JYjLNBZhr2xDKWt9SHiqYyYyl2XzRXQ==",
+  "dgSpecHash": "OJJ5sntpF6Pwdz6SxKjxnKj9FSMh76KRo6V9iWCJ+JEf4akRgcdLMyCM0RBjr3ztc08GUjjFAF+KFWzI6wPV6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mathe\\testcsharp\\CsharpProjects\\TestProject\\TestProject.csproj",
+  "projectFilePath": "C:\\Loja\\cs_validation_tests\\CsharpProjects\\TestProject\\TestProject.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

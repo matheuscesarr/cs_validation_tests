@@ -1,27 +1,33 @@
 ﻿int number = 0;
 bool confirm = false;
-do {
+
+do
+{
 Console.WriteLine("Enter an integer value between 5 and 10");
 string answer = Console.ReadLine();
 confirm = Int32.TryParse(answer,out number);
-if (confirm){
-        if (number >=5 && number<=10){
-        Console.WriteLine($"Your input value ({number}) has been accepted.");
-        } else {
-             Console.WriteLine($"You entered {number}. Please enter a number between 5 and 10.");
-        }
-}
-else {
-    Console.WriteLine("Sorry, you entered an invalid number, please try again");
-}
+    if (confirm)
+    {
+            if (number >=5 && number<=10)
+            {
+            Console.WriteLine($"Your input value ({number}) has been accepted.");
+            } else 
+            {
+                Console.WriteLine($"You entered {number}. Please enter a number between 5 and 10.");
+            }
+    }
+    else 
+    {
+        Console.WriteLine("Sorry, you entered an invalid number, please try again");
+    }
 } while (!confirm);
 
 string role= "";
-bool confirm2 = false;
+confirm = false;
 do {
         Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
-    role = Console.ReadLine().Trim().ToLower();
-    confirm2=true;
+        role = Console.ReadLine().Trim().ToLower();
+        confirm=true;
         switch (role)
         {
 
@@ -39,14 +45,12 @@ do {
 
             default:
             Console.WriteLine($@"The role name that you entered, ""{role}"" is not valid.");
-            confirm2=false;
+            confirm=false;
             break;
 
         } 
    
 
-} while (!confirm2);
-
+} while (!confirm);
 
 Console.WriteLine($@"You are the {role[0].ToString().ToUpper() + role.Substring(1)} number {number}!");
-    
